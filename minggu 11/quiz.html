@@ -1,59 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>percabangan</title>
-	</head>
-	<body>
-		<h3>Daftar Mahasiswa</h3>
-		<form actiom="javascript.void(0):" method="post" onsubmit="??">
-			<input type="text" id="TambahData" placeholder="Tambahkan Nama">
-			<input type="submit" value="+">
-		</form>
-		<div id="counter">
-		
-		</div>
-		<table border="1">
-			<thead>
-				<tr>
-					<td>Nama Mahasiswa</td>
-				</tr>
-			</thead>
-			<tbody id="daftarNama">
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Aplikasi Quiz JS</title>
+ 
+      <link rel="stylesheet" href="css/style.css">
 
-			</tbody>
-			<script>
-				var apl = new function (){
-				this.el = document.getElementById('daftarMhs');
-				this.mhs = ['Jono', 'Joni', 'Jini'];
-					
-					this.barisA11 = function(){
-						var data = '';
-					
-						if (this.mhs.lenght > 0){
-							for (i=0; i <this.mhs.length; i++){
-							data += '<tr>';
-							data += '<td>' + this mhs[i] + '</td>';
-							data += '</tr>';
-							}
-						}
-						this.Count(this.mhs.length);
-						return this.el.innerHTML = data;
-					};
-					this.Count = function(data){
-						var el = document.getElementById('counter');
-						if (data){
-							el.innerHTML = data + '' + 'Mahasiswa';
-							}else{
-							el.innerHTML = 'Data Kosong';
-							}
-						};
-						this.Add = function(){
-							alert ("tambah");
-						}						
-				}
-				apl.barisAll();
-			</script>
-		</table>
-	</body>
-	</body>
+
+ 
+</head>
+
+
+<body>
+  <!DOCTYPE html>
+<html>
+ <head>
+ <title>Quiz Matematika </title>
+  <link type='text/css' rel='stylesheet' href='style.css'/>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+ </head>
+ <body>
+  <div id='container'>
+   <div id='title'>
+    <h1>Belajar Quiz Matematika</h1>
+   </div>
+      <br/>
+     <div id='quiz'></div>
+      <div class='button' id='next'><a href='#'>Next</a></div>
+      <div class='button' id='prev'><a href='#'>Prev</a></div>
+      <div class='button' id='start'> <a href='#'>Start Over</a></div>
+      <!-- <button class='' id='next'>Next</a></button>
+      <button class='' id='prev'>Prev</a></button>
+      <button class='' id='start'> Start Over</a></button> -->
+     </div>
+
+
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+  <script type="text/javascript" src='questions.json'></script>
+  <script type='text/javascript' src='jsquiz.js'></script>
+ </body>
+</html>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+    <script src="quiz.js"></script>
+
+
+</body>
 </html>
