@@ -1,0 +1,65 @@
+* {
+    font-family: 'ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+   
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar{
+    background-color: #091040;
+    width: 260px;
+    padding: 5px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+
+.list-item{
+    margin-left: 10%;
+   
+}
+
+.main{
+    background-color: #c7ccf4;
+    flex-grow: 1;
+}
+
+.sidebar .description-header{
+    font-family: ubuntu;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #c7ccf4;
+    background-color:black;
+
+}
+
+.sidebar .logo{
+    text-align: center;
+    
+}
+
+.sidebar .main .list-item .description{
+    font-family: 'ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #091040 ;
+}
